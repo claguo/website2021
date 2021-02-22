@@ -10,7 +10,7 @@ function About() {
     return (
     <div style={{display: 'flex'}}>
 
-    <img src={profilepic} style={{width: '25%', borderRadius: '15%', margin: '7% 5%'}} />
+    <img src={profilepic} style={{width: '25%', borderRadius: '15%', margin: '7% 5%'}} alt='profile pic'/>
 
     <div style={{ fontSize: '4vw', position: 'fixed', width: '66.6667%',
     color: 'thistle', right: '0px' }}>
