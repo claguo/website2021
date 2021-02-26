@@ -39,7 +39,7 @@ function About() {
             </a>
 
             <a href='https://www.instagram.com/clrguo/' rel="noreferrer" target="_blank" className='contactbuttons'
-            style={{textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+            style={{textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', width: '28%'}}>
                 <InstagramIcon style={{ fontSize: '20', paddingRight: '2.5%'}} />
                 <div>just for fun: @clrguo</div>
             </a>
