@@ -26,7 +26,7 @@ function Home() {
 
           <div style = {{ position: 'relative', backgroundColor: 'thistle' }}>
             <div style={{ textAlign: 'center', fontSize: '3.5vw', padding: '10% 0% 5%', color: '#323135' }}>
-              recent projects
+              Recent Projects
             </div>
             <div className='flexbox' style={{color:'black'}}>
             
@@ -41,7 +41,7 @@ function Home() {
           <div style = {{ position: 'relative', backgroundColor: '#F6F2EF', textAlign: 'center', padding: '10% 0 5%'}}>
             <Link to='/about' className='smallhead abtbutton'>
             <AboutIcon style={{ fontSize: '20', padding: '0%' }}/>
-            <div style={{ marginBottom: '3%' }}>about</div>
+            <div style={{ marginBottom: '3%' }}>About</div>
             </Link>
             <hr style={{ width: '70%'}}/>
             <div className='smalltext' style={{paddingTop: '5%'}}>
