@@ -33,6 +33,9 @@ import gogreen from './pics/gogreen1.png';
 
 import newyear from './pics/newyearscard.gif';
 
+import snow from './pics/snow.jpg';
+import thumbsnow from './pics/snowthumb.jpg';
+
 // import pothosthumb from "./pics/pothosthumb.png";
 
 const config = [{
@@ -47,14 +50,15 @@ const config = [{
         'exturl':'https://tinyurl.com/gogreenUIUX',
         'imgs':[gogreen]
     }, {
-        'link': 'hill',
-        "title":"Hill",
-        'thumb':[thumbhill],
-        "year":"November 2020",
-        "mats":"paper",
-        'desc1':'A pop-up hill constructed with hand-cut paper cross sections.',
-        'desc2':'',
-        'imgs':[hill1,hill2,hill3,hill4]
+        'link': 'snow',
+        'title': 'Snow',
+        'thumb': 'thumbsnow',
+        'year': 'May 2021',
+        'mats': 'acrylic paint, canvas',
+        'desc1': 'A contemporary take on ukiyo-e art.',
+        'desc2': "3.5' x 8.5'",
+        'imgs' :[snow],
+        'fullimg':[snow]
     }, {
         'link':'bee',
         "title":"Bee Pattern",
@@ -64,6 +68,15 @@ const config = [{
         'desc1':'A hand-drawn seamless pattern.',
         'desc2':"6' x 4'",
         'imgs':[bee,bee2]
+    }, {
+        'link': 'hill',
+        "title":"Hill",
+        'thumb':[thumbhill],
+        "year":"November 2020",
+        "mats":"paper",
+        'desc1':'A pop-up hill constructed with hand-cut paper cross sections.',
+        'desc2':'',
+        'imgs':[hill1,hill2,hill3,hill4]
     }, {
         'link': 'fish',
         "title":"Fish Automaton",
