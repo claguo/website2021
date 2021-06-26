@@ -34,7 +34,7 @@ import gogreen from './pics/gogreen1.png';
 import newyear from './pics/newyearscard.gif';
 
 import snow from './pics/snow.jpg';
-import thumbsnow from './pics/snowthumb.jpg';
+import thumbsnow from './pics/thumbsnow.jpg';
 
 // import pothosthumb from "./pics/pothosthumb.png";
 
@@ -52,7 +52,7 @@ const config = [{
     }, {
         'link': 'snow',
         'title': 'Snow',
-        'thumb': 'thumbsnow',
+        'thumb': [thumbsnow],
         'year': 'May 2021',
         'mats': 'acrylic paint, canvas',
         'desc1': 'A contemporary take on ukiyo-e art.',
@@ -68,6 +68,16 @@ const config = [{
         'desc1':'A hand-drawn seamless pattern.',
         'desc2':"6' x 4'",
         'imgs':[bee,bee2]
+    }, {
+        'link': 'guo-greeting',
+        "title":"Guo Family New Year's Card",
+        'thumb':[newyearthumb],
+        "year":"December 2020",
+        "mats":"Procreate",
+        'desc1':"A digital new year's greeting card featuring members of my family and me.",
+        'desc2':'',
+        'imgs':[newyear],
+        'fullimg':[newyear]
     }, {
         'link': 'hill',
         "title":"Hill",
@@ -86,16 +96,6 @@ const config = [{
         'desc1':'Fish swim from a disorganized cluster to a circle formation as a handle is turned.',
         'desc2':'',
         'imgs':[fish,fish1,fish2]
-    }, {
-        'link': 'guo-greeting',
-        "title":"Guo Family New Year's Card",
-        'thumb':[newyearthumb],
-        "year":"December 2020",
-        "mats":"Procreate",
-        'desc1':"A digital new year's greeting card featuring members of my family and me.",
-        'desc2':'',
-        'imgs':[newyear],
-        'fullimg':[newyear]
     // }, {
     //     'link': 'pothos-garden',
     //     "title":"Pothos Garden",

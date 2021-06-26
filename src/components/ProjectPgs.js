@@ -37,7 +37,7 @@ function ProjectPg(props) {
         </Link>
         </div>
         <h1 style={{fontSize: '3.5vw'}}>{project.title}</h1>
-        <p style={{fontSize: '1.25vw'}}>made with: {project.mats}</p>
+        <p style={{fontSize: '1.25vw'}}>Made with: {project.mats}</p>
         <p style={{fontSize: '1.25vw'}}>{project.year}</p>
         <p>{project.desc1}</p>
         <p>{project.desc2}</p>

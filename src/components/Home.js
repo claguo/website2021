@@ -45,9 +45,9 @@ function Home() {
             </Link>
             <hr style={{ width: '70%'}}/>
             <div className='smalltext' style={{paddingTop: '5%'}}>
-              thank you for visiting!
+              Thank you for visiting!
               <br></br>
-              designed and built by me, Claire
+              Designed and built by me, Claire
             </div>
           </div>
 
