@@ -1,13 +1,16 @@
+
+@import url("//fonts.googleapis.com/css?family=Josefin+Sans:bold,light,regular");
+
 html, body {
   background-color: #323135;
-  color: thistle;
-  font-family: 'Playfair Display';
+  color: white;
+  font-family: 'josefin sans';
+  font-weight: 300;
   height: 100%;
   width: 100%;
 }
 
 p {
-  font-family: 'Montserrat';
   color: #323135;
   font-size: 1.5vw;
 }
@@ -21,11 +24,9 @@ p {
 .smalltext {
   color:#323135;
   font-size: 1.5vw;
-  font-family: 'Montserrat';
 }
 
 .exturl {
-  font-family: 'Montserrat';
   color: #BA8F95;
   font-size: .8rem;
 }
@@ -34,12 +35,6 @@ p {
   height: 100vh;
   font-size: 4vw;
   letter-spacing: .05rem;
-}
-
-.name {
-  position: absolute;
-  bottom: 10%;
-  left: 8%;
 }
 
 /* #flowericon {
@@ -160,4 +155,21 @@ p {
 }
 .contactbuttons:hover {
   color: #A2868B;
+}
+
+.socials {
+  display: flex;
+  width: 7vw;
+  border-radius: 50%;
+  margin: 1.5%;
+}
+
+.socials:hover {
+  background-color: white;
+  transition: .6s;
+  cursor: pointer;
+}
+.socials:active {
+  background-color: #CDD8B6;
+  transition: .3s;
 }

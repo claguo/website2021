@@ -16,7 +16,6 @@ function ProjectPg(props) {
 
   const params = useParams();
   const num = layouts.findIndex(LinkMatch);
-  console.log(num);
   let project = layouts[num];
 
   return (
@@ -43,7 +42,7 @@ function ProjectPg(props) {
         <p>{project.desc2}</p>
         <a className='exturl' href={project.exturl} rel="noreferrer" target="_blank">{project.desc3}</a>
 
-        {/* PREV/NEXT */}
+{/* PREV/NEXT */}
       {(num !== 0) &&
         <Link
           to={ '/projects/' + layouts[num-1].link } className='abtbutton'

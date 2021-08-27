@@ -38,7 +38,7 @@ import thumbsnow from './pics/thumbsnow.jpg';
 
 // import pothosthumb from "./pics/pothosthumb.png";
 
-const config = [{
+const layouts = [{
         'link': 'gogreen',
         'title':'GoGreen',
         'thumb': [thumbgogreen],
@@ -147,4 +147,4 @@ const config = [{
     // },
 ]
 
-export default config;
+export default layouts;
