@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 
 import ProjectCard from './ProjectCard.js';
 import layouts from './layouts';
-import resume from './resumelayout';
 import Footer from './footer';
 
 import berryicon from './pics/SVG/strawberry.svg';
@@ -13,8 +12,6 @@ import bearicon from './pics/SVG/bear.svg';
 import flowericon from './pics/SVG/flower.svg';
 
 import arrowright from './pics/SVG/arrowright.svg';
-
-import scallop from './pics/SVG/scallop.svg';
 
 function SwitchImage(){
  

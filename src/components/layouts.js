@@ -8,7 +8,6 @@ import thumbgogreen from './pics/thumbgogreen.png';
 import thumbbee from './pics/thumbbee.jpg';
 import thumbhill from './pics/thumbhill.jpg';
 import thumbfish from './pics/thumbfish.jpg';
-import thumbsnake from './pics/thumbsnake.jpg';
 import thumbmimesis from './pics/thumbmimesis.jpg';
 import thumbdad from './pics/thumbdad.jpg';
 import thumbhitchpremier from './pics/thumbhitchpremier.png';
@@ -20,9 +19,6 @@ import testimonials1 from './pics/testimonials1.png';
 import primary from './pics/primary.jpg';
 
 import hitchpremier from './pics/hitchpremier.png';
-
-import snake1 from './pics/snake1.jpg';
-import snakefull from './pics/snakefull.jpg';
 
 import hill1 from "./pics/hill1.jpg";
 import hill2 from "./pics/hill2.jpg";
