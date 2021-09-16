@@ -1,29 +1,12 @@
-
-@import url("//fonts.googleapis.com/css?family=Josefin+Sans:bold,light,regular");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
 html, body {
   background-color: #323135;
   color: white;
-  font-family: 'josefin sans';
+  font-family: 'work sans';
   font-weight: 300;
   height: 100%;
   width: 100%;
-}
-
-p {
-  color: #323135;
-  font-size: 1.5vw;
-}
-
-.smallhead {
-  color: #323135;
-  font-size: 2vw;
-  text-decoration: none;
-}
-
-.smalltext {
-  color:#323135;
-  font-size: 1.5vw;
 }
 
 .exturl {
@@ -31,145 +14,114 @@ p {
   font-size: .8rem;
 }
 
-.namediv {
-  height: 100vh;
-  font-size: 4vw;
-  letter-spacing: .05rem;
+/*thumbnails*/
+    .flexbox {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .linkcontainer {
+      display: flex;
+      position: relative;
+      width: 25.3333%;
+      margin: 3.5vw 0vw 3.5vw 0vw;
+      color: #323135;
+    }
+      .thumbs {
+        width: 100%;
+        overflow: hidden;
+      }
+        .hoveredthumbs {
+          opacity: .3;
+          transition-duration: .7s;
+        }
+    .titles {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 75%;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      text-align: center;
+      opacity: 0;
+    }
+      .hoveredtitles {
+        opacity: 1;
+        transition-duration: .7s;
+      }
+
+
+
+
+.hoveropacity:hover {
+  opacity: 50%;
+  transition-duration: .7s;
 }
 
-/* #flowericon {
-  height: 3.5rem;
-} */
-
-.flexbox {
+/* PREVNEXT */
+.button {
+  color: black;
   display: flex;
   align-items: center;
+  border: .2vw solid #C9D7A0;
+  border-radius: 3vw;
 }
-
-.linkarea {
-  display: flex;
-  width: 50%;
-}
-
-/* .projecttitle {
-  text-align: center;
-  width: 50%;
-  height: 2rem;
-  font-size: 2rem;
-  text-decoration: none;
-  color: white;
-} */
-
-/*PROJECTS.JS*/
-
-/* .projectsgrid {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
-} */
-
-/*thumbnails*/
-.flexbox {
-  display: flex;
-  position: relative;
-  padding: 0% 4% 20%;
-  flex-wrap: wrap;
-}
-.linkcontainer {
-  display: flex;
-  position: relative;
-  width: 25.3333%;
-  margin: 4% 4%;
-  color: #323135;
-}
-  .thumbs {
-    width: 100%;
-    overflow: hidden;
-  }
-    .hoveredthumbs {
-      opacity: .3;
-      transition-duration: .7s;
-    }
-.titles {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 75%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  text-align: center;
-  opacity: 0;
-}
-  .hoveredtitles {
-    opacity: 1;
-    transition-duration: .7s;
-  }
-  /* .titles {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
-    color: #fffbe6;
-    font-size: 35px;
-    letter-spacing: 5px;
-    opacity: 0;
-  }
-    .hoveredtitles {
-      opacity: 1;
-      transition-duration: .7s;
-    } */
-
-
-.buttons {
-  width: 8%;
-  height: 3vw;
-  background: none;
-  border: none;
-  font-family: 'Montserrat';
-  color: #897C80;
-  outline: none;
-  font-size: 1.75vw;
-  cursor: pointer;
+.button:hover {
+  background-color: #C9D7A0;
   transition-duration: .7s;
 }
-.buttons:hover {
-  color: #A2868B;
-}
-.clickedbuttons {
-  text-decoration: underline;
-  color: #BA8F95;
-}
 
-.abtbutton:hover {
-    color: #A2868B !important;
-    transition-duration: .7s !important;
-}
-.contactbuttons {
-  color: thistle;
-  font-size: 1.5vw;
-  font-family: 'montserrat';
-  transition-duration: .7s;
-}
-.contactbuttons:hover {
-  color: #A2868B;
-}
-
+/* SOCIALS */
 .socials {
   display: flex;
   width: 7vw;
   border-radius: 50%;
-  margin: 1.5%;
 }
-
 .socials:hover {
-  background-color: white;
+  background-color: #F3D3E8;
   transition: .6s;
   cursor: pointer;
 }
-.socials:active {
-  background-color: #CDD8B6;
-  transition: .3s;
+
+hr {
+  border-top: .3vw dashed #D2A5CD;
+  margin: 2% 6%
+}
+
+.abtpgtitle {
+  font-size: 1.5vw;
+  margin-top: 4%;
+  color: #BB89BD;
+  font-weight: bold;
+}
+
+.abtpgcontent {
+  font-size: 1.5vw;
+  color:black;
+}
+
+.abtpgyear {
+  font-size: 1.25vw;
+  margin-top: 2%;
+  color: #BB89BD;
+
+}
+
+.opacityon {
+  opacity: 100%;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.opacityoff {
+  opacity: 0;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.header {
+  font-size: 1.5vw;
+  color: #BB89BD;
+  font-weight: bold;
 }

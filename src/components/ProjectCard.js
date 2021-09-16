@@ -11,7 +11,6 @@ function ProjectCard(props) {
         onMouseEnter={() => setisHovered(true)}
         onMouseLeave={() => setisHovered(false)}
         to={ '/projects/' + project.link }
-        style={{ fontFamily: 'Montserrat' }}
       >
           <img
             className={ !isHovered ? 'thumbs' : 'thumbs hoveredthumbs' }

@@ -1,52 +1,66 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Footer from './footer';
+import resume from './resumelayout';
+import Header from './header';
 
-import MailIcon from '@material-ui/icons/MailOutlineSharp';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import HomeIcon from '@material-ui/icons/HomeOutlined';
-import profilepic from './pics/profile.png';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import pfp from './pics/pfp.JPG';
+import asteriskicon from './pics/SVG/asterick.svg';
+
 
 function About() {
+    const Resume = () => {
+        let content = [];
+        for (let i=0; i < resume.length; i++){
+          content.push(
+            <> 
+                <div style={{fontSize: '1vw', marginTop: '2vw'}}>{resume[i].dates}</div>
+                <div style={{color: '#73944B', fontSize: '1.5vw'}}>{resume[i].company}</div>
+              <div style={{fontSize: '1.5vw'}}>{resume[i].position}</div>
+            </>
+          )
+        }
+        return content;
+      }
+
     return (
-    <div style={{display: 'flex'}}>
+        <div style={{backgroundColor: '#f6f2ef'}}>
+            <Header />
+            <div style={{display: 'flex', paddingTop: '6vw'}}>
+            <img src={pfp} style={{width: '28%', margin: '4vw 4vw 4vw 6vw', objectFit: 'cover'}} alt='profile pic'/>
 
-    <img src={profilepic} style={{width: '25%', borderRadius: '15%', margin: '7% 5%'}} alt='profile pic'/>
 
-    <div style={{ fontSize: '4vw', position: 'fixed', width: '66.6667%',
-    color: 'thistle', right: '0px' }}>
+                <div style={{width: '66.6667%', color: 'black'}}>
+                    <div style={{fontSize: '4vw', margin: '5vw 6vw 1vw 0'}}> Hi, I'm Claire! </div>
+                    <div style={{fontSize: '1.5vw', margin: '0 6vw 0 0'}}> I'm an undergraduate industrial design student at Rhode Island School of Design with a passion for all things creative! </div>
+                    <div style={{display: 'flex'}}>
+                        <div style={{margin: '3vw 6vw 4vw 0', width: '35%'}}>
+                            <div className='abtpgtitle'> background </div>
+                            <Resume />
+                        </div>
+                        <div style={{margin: '3vw 6vw 4vw 0'}}>
+                            <div className='abtpgtitle'> skills </div>
+                            <div style={{marginTop: '2vw', color: '#73944B', fontSize: '1.5vw'}}> design </div>
+                            <div style={{fontSize: '1.5vw'}}> Figma - Illustrator - AdobeXD - InDesign </div>
+                            <div style={{marginTop: '2vw', color: '#73944B', fontSize: '1.5vw'}}> coding </div>
+                            <div style={{fontSize: '1.5vw'}}> HTML - CSS - Javascript </div>
+                        </div>
+                    </div>
+                </div>
 
-        <Link to='/' className='abtbutton' style={{ position: 'fixed', color: '#BA8F95', fontSize: '20', top: '15%', right: '5%' }}>
-            <HomeIcon />
-        </Link>
-
-        <div style={{padding: '20% 5% 5% 0%'}}>
-        <div > Hello, I'm Claire! </div>
-        <div style={{}}> I'm an undergraduate industrial design student at Rhode Island School of Design. </div>
-        </div>
-        
-        {/* CONTACT BUTTONS */}
-        <div style={{display: 'flex', justifyContent: 'space-around', paddingRight: '8%'}}>
-            <div style={{textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-                <MailIcon style={{fontSize: '20', paddingRight: '2.5%'}} />
-                <p style={{color: 'thistle'}}>cguo02@risd.edu</p>
+            </div>
+            
+            <div style={{margin: '3vw 6vw 3vw 6vw'}}>
+                <div className='abtpgtitle'> and in case you were wondering... </div>
+                <div className='abtpgcontent'> In my free time you can find me playing Valorant or Genshin Impact, learning piano, watching anime, or crocheting :)</div>
             </div>
 
-            <a href='https://github.com/claguo' rel="noreferrer" target="_blank" className='contactbuttons'
-            style={{textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-                <GitHubIcon style={{ fontSize: '20', paddingRight: '2.5%'}} />
-                <div>github.com/claguo</div>
-            </a>
+            <div style={{display: 'flex', flexDirection: 'column', margin: '8vw 0 4vw'}}>
+                <img src={asteriskicon} alt='asterisk' style={{height: '5vw'}}/>            
+                <div className='abtpgcontent' style={{margin: '2vw 10vw', textAlign: 'center'}}> Thank you for taking the time to check out my portfolio! If you're interested in working with me, please feel free to reach out to me anytime through email or LinkedIn! </div>
+            </div>
+            <Footer />
 
-            <a href='https://www.instagram.com/clrguo/' rel="noreferrer" target="_blank" className='contactbuttons'
-            style={{textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', width: '28%'}}>
-                <InstagramIcon style={{ fontSize: '20', paddingRight: '2.5%'}} />
-                <div>just for fun: @clrguo</div>
-            </a>
         </div>
-    
-    </div>
-    </div>
     )
 }
 
