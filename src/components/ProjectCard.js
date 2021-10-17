@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function ProjectCard(props) {
     let project = props.project;
-
+    
     const [isHovered, setisHovered] = useState(false);
   
     return (
@@ -16,7 +16,7 @@ function ProjectCard(props) {
             className={ !isHovered ? 'thumbs' : 'thumbs hoveredthumbs' }
             src = {project.thumb} alt = {project.title}
           />
-          <span style= {{fontSize: '1.75vw'}} className= { !isHovered ? 'titles' : 'titles hoveredtitles'}> {project.title} </span>
+          <span style= {{fontSize: '1.5vw'}} className= { !isHovered ? 'titles' : 'titles hoveredtitles'}> {project.title} </span>
       </Link>
     )
   }

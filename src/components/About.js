@@ -13,7 +13,7 @@ function About() {
         for (let i=0; i < resume.length; i++){
           content.push(
             <> 
-                <div style={{fontSize: '1vw', marginTop: '2vw'}}>{resume[i].dates}</div>
+                <div style={{fontSize: '1vw', marginTop: '1.5vw'}}>{resume[i].dates}</div>
                 <div style={{color: '#73944B', fontSize: '1.5vw'}}>{resume[i].company}</div>
               <div style={{fontSize: '1.5vw'}}>{resume[i].position}</div>
             </>
@@ -37,11 +37,11 @@ function About() {
                             <div className='abtpgtitle'> background </div>
                             <Resume />
                         </div>
-                        <div style={{margin: '3vw 6vw 4vw 0'}}>
+                        <div style={{margin: '3vw 6vw 4vw 0', width: '50%'}}>
                             <div className='abtpgtitle'> skills </div>
-                            <div style={{marginTop: '2vw', color: '#73944B', fontSize: '1.5vw'}}> design </div>
-                            <div style={{fontSize: '1.5vw'}}> Figma - Illustrator - AdobeXD - InDesign </div>
-                            <div style={{marginTop: '2vw', color: '#73944B', fontSize: '1.5vw'}}> coding </div>
+                            <div style={{marginTop: '2vw', color: '#73944B', fontSize: '1.5vw'}}> DESIGN </div>
+                            <div style={{fontSize: '1.5vw'}}> Illustrator - AdobeXD - Figma - Procreate - Photoshop - InDesign </div>
+                            <div style={{marginTop: '2vw', color: '#73944B', fontSize: '1.5vw'}}> CODING </div>
                             <div style={{fontSize: '1.5vw'}}> HTML - CSS - Javascript </div>
                         </div>
                     </div>
@@ -49,14 +49,14 @@ function About() {
 
             </div>
             
-            <div style={{margin: '3vw 6vw 3vw 6vw'}}>
+            <div style={{margin: '3vw 10vw 0'}}>
                 <div className='abtpgtitle'> and in case you were wondering... </div>
-                <div className='abtpgcontent'> In my free time you can find me playing Valorant or Genshin Impact, learning piano, watching anime, or crocheting :)</div>
+                <div className='abtpgcontent' style={{marginTop: '1.5vw'}}> In my free time you can find me playing Valorant or Genshin Impact, learning piano, watching anime, or crocheting :)</div>
             </div>
 
-            <div style={{display: 'flex', flexDirection: 'column', margin: '8vw 0 4vw'}}>
-                <img src={asteriskicon} alt='asterisk' style={{height: '5vw'}}/>            
-                <div className='abtpgcontent' style={{margin: '2vw 10vw', textAlign: 'center'}}> Thank you for taking the time to check out my portfolio! If you're interested in working with me, please feel free to reach out to me anytime through email or LinkedIn! </div>
+            <div style={{display: 'flex', flexDirection: 'column', margin: '6vw 0 0'}}>
+                <img src={asteriskicon} alt='asterisk' style={{height: '3vw'}}/>            
+                <div className='abtpgcontent' style={{margin: '2vw 10vw 0', textAlign: 'center'}}> Thank you for taking the time to check out my portfolio! If you're interested in working with me, please feel free to reach out to me anytime through email or LinkedIn! </div>
             </div>
             <Footer />
 

@@ -42,7 +42,7 @@ function SwitchImage(){
 
 function Hero() {
     return (
-      <div style={{ textAlign: 'center', height: '100vh', fontSize: '4vw', letterSpacing: '.15vw',
+      <div style={{ textAlign: 'center', height: '100vh', fontSize: '4vw', letterSpacing: '.15vw', 
                     display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         <SwitchImage />
         <span style={{margin: '2vw'}}> claire guo </span>
@@ -52,6 +52,11 @@ function Hero() {
   }
 
 function Home() {
+
+const idprojects=  layouts.filter(project => project.section === 'id');
+const gdprojects=  layouts.filter(project => project.section === 'gd');
+const faprojects=  layouts.filter(project => project.section === 'fa');
+  
     return (
       <>
         <Hero />
@@ -62,40 +67,34 @@ function Home() {
             <img src={scallop} style={{ position: 'absolute', top: '-100px', width: '120%' }} />
           </div> */}
 
-          <div style={{ display: 'flex', alignItems: 'center', fontSize: '4vw', padding: '10% 4% 0', color: '#323135' }}>
-            <img src={asteriskicon} alt='asterisk' style={{height: '5vw', margin: '2vw'}}/> projects </div>
-
-          <div className='flexbox' style={{color:'black', marginBottom: '15%'}}>
-            {layouts.map((layout) => {
-              return <ProjectCard project={layout} />
+          <div className='sectiontitles' >
+            <img src={asteriskicon} alt='asterisk' style={{height: '3vw', margin: '0 2vw'}}/> industrial design & modeling </div>
+          <div className='thumbflexbox'>
+            {idprojects.map((projects) => {
+              return <ProjectCard project={projects} />
             })}
           </div>
 
-{/* RESUME */}
-          {/* <div style={{ display: 'flex', alignItems: 'center', fontSize: '4vw', padding: '18% 4% 5%', color: '#323135' }}>
-            <img src={asteriskicon} alt='asterisk' style={{height: '5vw', margin: '2%'}}/>
-            ABOUT
+          <div className='sectiontitles' >
+            <img src={asteriskicon} alt='asterisk' style={{height: '3vw', margin: '0 2vw'}}/> graphic design </div>
+          <div className='thumbflexbox'>
+            {gdprojects.map((projects) => {
+              return <ProjectCard project={projects} />
+            })}
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '6%' }} >
-            {resume.map((item) => {
-              return (
-                <div style={{ display: 'flex', color:'#323135', margin: '1% 5%', width: '50%' }}>
-
-                  <span style= {{ marginTop: '.3vw', fontSize: '1.5vw', width: '20%', textAlign: 'right' }}>{item.dates}</span>
-
-                  <div style={{ display: 'flex', flexDirection: 'column', fontSize: '2vw', marginLeft: '3%' }}>
-                    <span style={{ fontWeight: 'regular' }}>{item.company}</span>
-                    <span>{item.position}</span>
-                  </div>
-
-                </div>
-              )
+          <div className='sectiontitles' >
+            <img src={asteriskicon} alt='asterisk' style={{height: '3vw', margin: '0 2vw'}}/> illustration & fine arts </div>
+          <div className='thumbflexbox'>
+            {faprojects.map((projects) => {
+              return <ProjectCard project={projects} />
             })}
-          </div> */}
-          <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', margin: '0% 7% 6% 6%'}}>
+          </div>
+
+
+          <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', margin: '9.5vw 7vw 0 6%'}}>
             <div style= {{color: '#323135', fontSize: '1.5vw', display: 'flex', alignItems: 'center', width: '64%'}}>
-              <img src={asteriskicon} alt='asterisk' style={{height: '5vw'}}/>
+              <img src={asteriskicon} alt='asterisk' style={{height: '3vw'}}/>
               <div style= {{marginLeft: '2vw'}}>Thank you so much for visiting! Please feel free to reach out to me anytime through email or LinkedIn (linked below). </div>
             </div>
 

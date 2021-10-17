@@ -8,7 +8,7 @@ import arrowleft from './pics/SVG/arrowleft.svg';
 import arrowright from './pics/SVG/arrowright.svg';
 
 
-function ProjectPg(props) {
+function ProjectPg() {
 
   const LinkMatch = (layout) => {
     return layout.link === params.id
@@ -17,7 +17,6 @@ function ProjectPg(props) {
   const params = useParams();
   const num = layouts.findIndex(LinkMatch);
   let project = layouts[num];
-  let order = 0;
 
   const Details = () => {
     let content = [];
@@ -37,18 +36,19 @@ function ProjectPg(props) {
       <Header />
 {/* HERO */}
     <div style={{backgroundColor:'#f6f2ef', color: 'black', fontSize: '4vw', paddingTop: '10%' }}>
-      <div style={{margin: '0 6% 2%'}}>{project.title}</div>
+      <div style={{margin: '0 6%'}}>{project.title}</div>
       {(project.cover !== undefined) &&
-        <img src={project.cover} alt={project.title} style={{width: '88%', padding: '2% 6% 0'}} />
+        <img src={project.cover} alt={project.title} style={{width: '88%', padding: '4vw 6vw 0'}} />
       }
 
 {/* DESCRIPTION */}
-      <div style={{fontSize: '1.5vw', textAlign: 'center', padding: '6% 6% 0', lineHeight: '2vw'}}>{project.desc}</div>
-
+    {(project.desc !== undefined) &&
+      <div style={{fontSize: '1.5vw', textAlign: 'center', padding: '4vw 10vw 0', lineHeight: '2vw'}}>{project.desc}</div>
+    }
 {/* DETAILS */}
-      <div style={{display: 'flex', alignItems: 'flex-start', margin: '6% 6% 0'}}> 
+      <div style={{display: 'flex', alignItems: 'flex-start', margin: '6vw 6vw 6vw'}}> 
         <div style={{fontSize: '1.5vw', backgroundColor: '#EEE6E2', position: 'sticky', top: '15vh', width: '35%', display: 'flex', flexDirection: 'column'}}>
-          <Details style={{}} />
+          <Details />
         </div>
 
         <div style={{display: 'flex', flexDirection: 'column', width: '60%', marginLeft: '5%'}}>
@@ -64,7 +64,7 @@ function ProjectPg(props) {
       </div>
 
 {/* IMG ROW */}
-      {(project.imgrow !== undefined) &&
+      {/* {(project.imgrow !== undefined) &&
       <>
         <div style={{fontSize: '3vw', marginTop: '10vw', marginLeft: '6vw'}}>{project.imgrowtitle}</div>
         <div style={{display: 'flex', justifyContent: 'space-evenly', marginTop: '3vw'}}>
@@ -77,15 +77,24 @@ function ProjectPg(props) {
           <div style={{margin: '2vw 6vw'}}>{project.imgrowcaptions[1]}</div>
           </div>
         </div>
-      </>
-      }
-      
-      {(project.desc2 !== undefined) &&
         <div style={{fontSize: '1.5vw', textAlign: 'center', padding: '6% 6% 0'}}>{project.desc2}</div>
       }
+      </>
+      } */}
+
+{(project.imgs2 !== undefined) &&
+<>
+  <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'space-evenly', width: '88%', margin: '0 6vw'}}>
+    <img src={project.imgs2[0]} alt='img1' />
+    <div style={{margin: '4vw 10vw 10vw', fontSize: '1.5vw', lineHeight: '2vw'}}>{project.imgcaptions[0]}</div>
+    <img src={project.imgs2[1]} alt='img2' />
+    <div style={{margin: '4vw 10vw 0', fontSize: '1.5vw', lineHeight: '2vw'}}>{project.imgcaptions[1]}</div>
+  </div>
+</>
+}
 
 {/* PREV/NEXT */}
-        <div style={{fontSize: '1.5vw', padding: '6vw 0 10vw'}}>
+        <div style={{fontSize: '1.5vw', paddingTop: '4vw'}}>
           {(num !== 0) &&
             <Link to={ '/projects/' + layouts[num-1].link } style={{left: '6vw', position: 'absolute', textDecoration: 'none'}}>
               <div className='button' style={{height: '4vw', display: 'flex', padding: '0 2vw'}}>
@@ -102,7 +111,7 @@ function ProjectPg(props) {
               </div> 
             </Link>
           }
-          {(num == layouts.length-1) &&
+          {(num === layouts.length-1) &&
             <Link to='/about' style={{right: '6vw', position: 'absolute', fontSize: '1.5vw', textDecoration: 'none'}} >
               <div className='button' style={{height: '4vw', display: 'flex', flexDirection: 'row-reverse', padding: '0 2vw'}}> More about me! </div>
             </Link>
